@@ -1,6 +1,7 @@
 setwd('C:/Users/alexa/OneDrive/Documentos/shark_gillnet_paper')
 
 # loading packages
+if (!require("pacman")) install.packages("pacman")
 
 pacman::p_load(readxl, ggplot2, rnaturalearth, terra,
                tidyterra, ggspatial, ggalt, ggtext, raster, marmap, 
@@ -162,5 +163,6 @@ ggplot(shark_df, aes(y = fl, x =  bottom))+
        bg = 'white',
        dpi = 1000,
        h = 18/3, w = 15/3)
+
 
 
